@@ -13,9 +13,27 @@ class _ExpensesState extends State<Expenses> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Spending'),
+        title: const Row(
+          children: [
+            Text(
+              'Spending',
+              style: TextStyle(
+                fontSize: 24,
+                fontFamily: 'SF Pro Text',
+                fontWeight: FontWeight.w700,
+                letterSpacing: -0.48,
+              ),
+            ),
+          ],
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.add_circle))
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.add_circle_outline),
+            iconSize: 30,
+          )
         ],
       ),
     );
