@@ -1,3 +1,4 @@
+import 'package:expense_tracker/widgets/Nav/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class Expenses extends StatefulWidget {
@@ -36,6 +37,7 @@ class _ExpensesState extends State<Expenses> {
           )
         ],
       ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }
